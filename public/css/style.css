@@ -1,8 +1,147 @@
 body {
     font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background: url('../images/pattern-background-desktop.svg') repeat no-repeat hsl(225, 100%, 94%);
+    text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.8em;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+/*containers*/
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main, footer {
+    width: 50%;
+}
+
+.card {
+    margin: 20%;
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 1rem 2rem;
+}
+
+.suma-div {
+    background: hsl(225, 100%, 98%);
+    padding: 3%;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.col-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-6 {
+    text-align: left;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+/*images and icons*/
+.image-div img {
+    border-radius: 15px 15px 0 0;
+}
+
+/*paragraph*/
+.col-6 p {
+    line-height: 0.8;
+}
+
+.plan-txt {
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+/*buttons*/
+#paymentBtn, #cancelBtn {
+    width: 100%;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+#paymentBtn {
+    background-color: hsla(245, 75%, 52%, 1);
+    color: hsl(225, 100%, 98%);
+}
+
+#cancelBtn {
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+#paymentBtn:hover {
+    background-color: hsla(245, 75%, 52%, 0.6);
+}
+
+/*links*/
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*responsive effect*/
+@media (max-width:1066px) {
+    main, footer {
+        width: 70%;
+    }
+}
+
+@media (max-width:800px) {
+    main, footer {
+        width: 80%;
+    }
+
+    .card {
+        margin: 10%;
+    }
+}
+
+@media (max-width:600px) {
+    body {
+        font-size: 12px;
+        background-image: url('../images/pattern-background-mobile.svg');
+    }
+
+    main, footer {
+        width: 100%;
+    }
+
+    .card {
+        margin: 5%;
+    }
+
+}
+
+@media (max-width:350px) {
+    body {
+        font-size: 10px;
+    }
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+    #paymentBtn, #cancelBtn {
+        font-size: 14px;
+    }
+
+}
